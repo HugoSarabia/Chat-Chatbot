@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>OPCIONES Y MENSAJES</title>
+		<script src="https://kit.fontawesome.com/bd6bb382c6.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href=".\font-awesome\css\font-awesome.min.css" />
+		<link rel="stylesheet" href="css/style_interface.css" />
+		<script src="node_modules\sweetalert2\dist\sweetalert2.all.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<img class="logo-img" src="img/logo.png" alt="Toronja Lab Logo">
+				<h1 class="header-title">TABLA DE OPCIONES Y MENSAJES</h1>
+			</div>
+			<div class="table-container" id="tableContainerOp" >
+				<div class="table-header">
+					<div class="table-header-title">
+						<h2>TABLA DE OPCIONES</h2>
+					</div>
+					<div class="table-header-options">
+						<button class="create-new-option" id="createNewOp">
+							<i class="fa fa-plus" aria-hidden="true"></i>
+						</button>
+					</div>
+				</div>
+				<div class="table-content">
+					<table aria-live="polite" id="tablaOpciones" class="table">
+						<thead class="table-head">
+							<tr class="table-row-columns">
+								<th class="table-column-title">ID</th>
+								<th class="table-column-title">OPCION</th>
+								<th class="table-column-title">TIPO</th>
+								<th class="table-column-title">ID MENSAJE RESPONDIDO</th>
+								<th class="table-column-title">ID MENSAJE A MOSTRAR</th>
+								<th class="table-column-title">ACCIONES</th>
+							</tr>
+						</thead>
+						<tbody class="table-body" id="tableBodyOpciones">
+							
+						</tbody>
+						<tfoot class="table-footer">
+							<tr class="table-footer-row">
+								<td class="table-row-content" colspan="5">
+									<div class="table-footer-options">
+										<button
+											aria-label="Página previa"
+											title="Página anterior"
+											class="pagination-button"
+											id="prev-button-option"
+										>
+											<i class="fa fa-angle-left" aria-hidden="true"></i>
+										</button>
+										<div id="pagination-numbers-options" class="pagination-numbers"></div>
+										<button
+											aria-label="Página siguiente"
+											title="Página siguiente"
+											class="pagination-button"
+											id="next-button-option"
+										>
+											<i class="fa fa-angle-right" aria-hidden="true"></i>
+										</button>
+									</div>
+								</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+
+			<div class="table-container" id="tableContainerMs">
+				<div class="table-header">
+					<div class="table-header-title">
+						<h2>TABLA DE MENSAJES</h2>
+					</div>
+					<div class="table-header-options">
+						<button class="create-new-option" id="createNewMs">
+							<i class="fa fa-plus" aria-hidden="true"></i>
+						</button>
+					</div>
+				</div>
+				<div class="table-content">
+					<table aria-live="polite" id="tablaMensajes" class="table">
+						<thead class="table-head">
+							<tr class="table-row-columns">
+								<th class="table-column-title">ID</th>
+								<th class="table-column-title">MENSAJE</th>
+								<th class="table-column-title">ID OPCION SIGUIENTE</th>
+								<th class="table-column-title">ID OPCION PASADA</th>
+								<th class="table-column-title">ACCIONES</th>
+							</tr>
+						</thead>
+						<tbody class="table-body" id="tableBodyMensajes">
+							
+						</tbody>
+						<tfoot class="table-footer">
+							<tr class="table-footer-row">
+								<td class="table-row-content" colspan="5">
+									<div class="table-footer-options">
+										<button
+											aria-label="Página previa"
+											title="Página anterior"
+											class="pagination-button"
+											id="prev-button-message"
+										>
+											<i class="fa fa-angle-left" aria-hidden="true"></i>
+										</button>
+										<div id="pagination-numbers-messages" class="pagination-numbers"></div>
+										<button
+											aria-label="Página siguiente"
+											title="Página siguiente"
+											class="pagination-button"
+											id="next-button-message"
+										>
+											<i class="fa fa-angle-right" aria-hidden="true"></i>
+										</button>
+									</div>
+								</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+		<script src="js/interface.js"></script>
+	</body>
+</html>
